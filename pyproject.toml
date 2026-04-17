@@ -1,0 +1,15 @@
+[project]
+name = "replace-macos-armenian-fonts"
+version = "0.1.0"
+description = "A tool to easily change the macOS system fonts for Armenian with a replacement font of your liking."
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "fonttools>=4.62.1",
+]
+
+[dependency-groups]
+dev = [
+    "pyinstaller>=6.19.0",
+    "ruff>=0.15.11",
+]
