@@ -2,7 +2,7 @@
 
 # Replace the macOS System Fonts for Armenian
 
-![Supported macOS Versions (VM-tested): Monterey 12 – Tahoe 26](https://img.shields.io/badge/Supported_macOS_Versions_(VM--tested)-Monterey_12_%E2%80%93_Tahoe_26-gold)
+![Supported macOS Versions (VM-tested): Monterey 12 – Golden Gate 27 (beta)](https://img.shields.io/badge/Supported_macOS_Versions_(VM--tested)-Monterey_12_%E2%80%93_Golden_Gate_27_(beta)-gold)
 [![Buy Me a Coffee](https://img.shields.io/badge/Buy_Me_a_Coffee-gold?logo=buymeacoffee&logoColor=333)](https://buymeacoffee.com/krmapet?utm_source=github&utm_medium=referral&utm_campaign=sf_noto_replacer&utm_content=badge)
 
 A tool to easily change the macOS system fonts for rendering Armenian — SF Armenian and Noto Sans Armenian — with a replacement font of your liking.
@@ -67,7 +67,7 @@ This tool does the tedious job of crafting the compatible replacement font files
 
 Assuming you want to replace the system fonts for Armenian with a font named `ReplacementFont.ttf`:
 
-1. Download the latest version of the executable `patch-system-fonts` from [Releases]() and place it next to your font file.
+1. Download the latest version of the executable `patch-system-fonts` from [Releases](https://github.com/sarkisandreyan/replace-macos-armenian-fonts/releases) and place it next to your font file.
 2. Open up the Terminal at that folder, then run the following command:
 
     ```bash
