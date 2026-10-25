@@ -268,205 +268,199 @@ def getNotoTTC():
 
     thin["OS/2"].usWeightClass = 100
 
-    thin["name"].setName("Noto Sans Armenian Thin", 1, 1, 0, 0x0)
-    thin["name"].setName("Regular", 2, 1, 0, 0x0)
-    thin["name"].setName("Noto Sans Armenian Thin; 15.0d1e2; 2019-03-15", 3, 1, 0, 0x0)
-    thin["name"].setName("Noto Sans Armenian Thin", 4, 1, 0, 0x0)
-    thin["name"].setName("NotoSansArmenian-Thin", 6, 1, 0, 0x0)
-    thin["name"].setName("Noto Sans Armenian", 16, 1, 0, 0x0)
-    thin["name"].setName("Thin", 17, 1, 0, 0x0)
-    thin["name"].setName("Noto Sans Armenian Thin", 1, 3, 1, 0x409)
-    thin["name"].setName("Regular", 2, 3, 1, 0x409)
-    thin["name"].setName(
-        "Noto Sans Armenian Thin; 15.0d1e2; 2019-03-15", 3, 3, 1, 0x409
-    )
-    thin["name"].setName("Noto Sans Armenian Thin", 4, 3, 1, 0x409)
-    thin["name"].setName("NotoSansArmenian-Thin", 6, 3, 1, 0x409)
-    thin["name"].setName("Noto Sans Armenian", 16, 3, 1, 0x409)
-    thin["name"].setName("Thin", 17, 3, 1, 0x409)
+    thinName = thin["name"]
+    thinName.setName("Noto Sans Armenian Thin", 1, 1, 0, 0x0)
+    thinName.setName("Regular", 2, 1, 0, 0x0)
+    thinName.setName("Noto Sans Armenian Thin; 15.0d1e2; 2019-03-15", 3, 1, 0, 0x0)
+    thinName.setName("Noto Sans Armenian Thin", 4, 1, 0, 0x0)
+    thinName.setName("NotoSansArmenian-Thin", 6, 1, 0, 0x0)
+    thinName.setName("Noto Sans Armenian", 16, 1, 0, 0x0)
+    thinName.setName("Thin", 17, 1, 0, 0x0)
+    thinName.setName("Noto Sans Armenian Thin", 1, 3, 1, 0x409)
+    thinName.setName("Regular", 2, 3, 1, 0x409)
+    thinName.setName("Noto Sans Armenian Thin; 15.0d1e2; 2019-03-15", 3, 3, 1, 0x409)
+    thinName.setName("Noto Sans Armenian Thin", 4, 3, 1, 0x409)
+    thinName.setName("NotoSansArmenian-Thin", 6, 3, 1, 0x409)
+    thinName.setName("Noto Sans Armenian", 16, 3, 1, 0x409)
+    thinName.setName("Thin", 17, 3, 1, 0x409)
 
     # 'ExtraLight' instance
     extralight = instancer.instantiateVariableFont(font, {"wght": 133}, static=True)
 
     extralight["OS/2"].usWeightClass = 200
 
-    extralight["name"].setName("Noto Sans Armenian ExtLt", 1, 1, 0, 0x0)
-    extralight["name"].setName("Regular", 2, 1, 0, 0x0)
-    extralight["name"].setName(
+    extralightName = extralight["name"]
+    extralightName.setName("Noto Sans Armenian ExtLt", 1, 1, 0, 0x0)
+    extralightName.setName("Regular", 2, 1, 0, 0x0)
+    extralightName.setName(
         "Noto Sans Armenian ExtraLight; 15.0d1e2; 2019-03-15", 3, 1, 0, 0x0
     )
-    extralight["name"].setName("Noto Sans Armenian ExtraLight", 4, 1, 0, 0x0)
-    extralight["name"].setName("NotoSansArmenian-ExtraLight", 6, 1, 0, 0x0)
-    extralight["name"].setName("Noto Sans Armenian", 16, 1, 0, 0x0)
-    extralight["name"].setName("ExtraLight", 17, 1, 0, 0x0)
-    extralight["name"].setName("Noto Sans Armenian ExtLt", 1, 3, 1, 0x409)
-    extralight["name"].setName("Regular", 2, 3, 1, 0x409)
-    extralight["name"].setName(
+    extralightName.setName("Noto Sans Armenian ExtraLight", 4, 1, 0, 0x0)
+    extralightName.setName("NotoSansArmenian-ExtraLight", 6, 1, 0, 0x0)
+    extralightName.setName("Noto Sans Armenian", 16, 1, 0, 0x0)
+    extralightName.setName("ExtraLight", 17, 1, 0, 0x0)
+    extralightName.setName("Noto Sans Armenian ExtLt", 1, 3, 1, 0x409)
+    extralightName.setName("Regular", 2, 3, 1, 0x409)
+    extralightName.setName(
         "Noto Sans Armenian ExtraLight; 15.0d1e2; 2019-03-15", 3, 3, 1, 0x409
     )
-    extralight["name"].setName("Noto Sans Armenian ExtraLight", 4, 3, 1, 0x409)
-    extralight["name"].setName("NotoSansArmenian-ExtraLight", 6, 3, 1, 0x409)
-    extralight["name"].setName("Noto Sans Armenian", 16, 3, 1, 0x409)
-    extralight["name"].setName("ExtraLight", 17, 3, 1, 0x409)
+    extralightName.setName("Noto Sans Armenian ExtraLight", 4, 3, 1, 0x409)
+    extralightName.setName("NotoSansArmenian-ExtraLight", 6, 3, 1, 0x409)
+    extralightName.setName("Noto Sans Armenian", 16, 3, 1, 0x409)
+    extralightName.setName("ExtraLight", 17, 3, 1, 0x409)
 
     # 'Light' instance
     light = instancer.instantiateVariableFont(font, {"wght": 266}, static=True)
 
     light["OS/2"].usWeightClass = 300
 
-    light["name"].setName("Noto Sans Armenian Light", 1, 1, 0, 0x0)
-    light["name"].setName("Regular", 2, 1, 0, 0x0)
-    light["name"].setName(
-        "Noto Sans Armenian Light; 15.0d1e2; 2019-03-15", 3, 1, 0, 0x0
-    )
-    light["name"].setName("Noto Sans Armenian Light", 4, 1, 0, 0x0)
-    light["name"].setName("NotoSansArmenian-Light", 6, 1, 0, 0x0)
-    light["name"].setName("Noto Sans Armenian", 16, 1, 0, 0x0)
-    light["name"].setName("Light", 17, 1, 0, 0x0)
-    light["name"].setName("Noto Sans Armenian Light", 1, 3, 1, 0x409)
-    light["name"].setName("Regular", 2, 3, 1, 0x409)
-    light["name"].setName(
-        "Noto Sans Armenian Light; 15.0d1e2; 2019-03-15", 3, 3, 1, 0x409
-    )
-    light["name"].setName("Noto Sans Armenian Light", 4, 3, 1, 0x409)
-    light["name"].setName("NotoSansArmenian-Light", 6, 3, 1, 0x409)
-    light["name"].setName("Noto Sans Armenian", 16, 3, 1, 0x409)
-    light["name"].setName("Light", 17, 3, 1, 0x409)
+    lightName = light["name"]
+    lightName.setName("Noto Sans Armenian Light", 1, 1, 0, 0x0)
+    lightName.setName("Regular", 2, 1, 0, 0x0)
+    lightName.setName("Noto Sans Armenian Light; 15.0d1e2; 2019-03-15", 3, 1, 0, 0x0)
+    lightName.setName("Noto Sans Armenian Light", 4, 1, 0, 0x0)
+    lightName.setName("NotoSansArmenian-Light", 6, 1, 0, 0x0)
+    lightName.setName("Noto Sans Armenian", 16, 1, 0, 0x0)
+    lightName.setName("Light", 17, 1, 0, 0x0)
+    lightName.setName("Noto Sans Armenian Light", 1, 3, 1, 0x409)
+    lightName.setName("Regular", 2, 3, 1, 0x409)
+    lightName.setName("Noto Sans Armenian Light; 15.0d1e2; 2019-03-15", 3, 3, 1, 0x409)
+    lightName.setName("Noto Sans Armenian Light", 4, 3, 1, 0x409)
+    lightName.setName("NotoSansArmenian-Light", 6, 3, 1, 0x409)
+    lightName.setName("Noto Sans Armenian", 16, 3, 1, 0x409)
+    lightName.setName("Light", 17, 3, 1, 0x409)
 
     # 'Regular' instance
     regular = instancer.instantiateVariableFont(font, {"wght": 400}, static=True)
 
     regular["OS/2"].usWeightClass = 400
 
-    regular["name"].setName("Noto Sans Armenian", 1, 1, 0, 0x0)
-    regular["name"].setName("Regular", 2, 1, 0, 0x0)
-    regular["name"].setName(
+    regularName = regular["name"]
+    regularName.setName("Noto Sans Armenian", 1, 1, 0, 0x0)
+    regularName.setName("Regular", 2, 1, 0, 0x0)
+    regularName.setName(
         "Noto Sans Armenian Regular; 15.0d1e2; 2019-03-15", 3, 1, 0, 0x0
     )
-    regular["name"].setName("Noto Sans Armenian Regular", 4, 1, 0, 0x0)
-    regular["name"].setName("NotoSansArmenian-Regular", 6, 1, 0, 0x0)
-    regular["name"].setName("Noto Sans Armenian", 1, 3, 1, 0x409)
-    regular["name"].setName("Regular", 2, 3, 1, 0x409)
-    regular["name"].setName(
+    regularName.setName("Noto Sans Armenian Regular", 4, 1, 0, 0x0)
+    regularName.setName("NotoSansArmenian-Regular", 6, 1, 0, 0x0)
+    regularName.setName("Noto Sans Armenian", 1, 3, 1, 0x409)
+    regularName.setName("Regular", 2, 3, 1, 0x409)
+    regularName.setName(
         "Noto Sans Armenian Regular; 15.0d1e2; 2019-03-15", 3, 3, 1, 0x409
     )
-    regular["name"].setName("Noto Sans Armenian Regular", 4, 3, 1, 0x409)
-    regular["name"].setName("NotoSansArmenian-Regular", 6, 3, 1, 0x409)
+    regularName.setName("Noto Sans Armenian Regular", 4, 3, 1, 0x409)
+    regularName.setName("NotoSansArmenian-Regular", 6, 3, 1, 0x409)
 
     # 'Medium' instance
     medium = instancer.instantiateVariableFont(font, {"wght": 520}, static=True)
 
     medium["OS/2"].usWeightClass = 500
 
-    medium["name"].setName("Noto Sans Armenian Med", 1, 1, 0, 0x0)
-    medium["name"].setName("Regular", 2, 1, 0, 0x0)
-    medium["name"].setName(
-        "Noto Sans Armenian Medium; 15.0d1e2; 2019-03-15", 3, 1, 0, 0x0
-    )
-    medium["name"].setName("Noto Sans Armenian Medium", 4, 1, 0, 0x0)
-    medium["name"].setName("NotoSansArmenian-Medium", 6, 1, 0, 0x0)
-    medium["name"].setName("Noto Sans Armenian", 16, 1, 0, 0x0)
-    medium["name"].setName("Medium", 17, 1, 0, 0x0)
-    medium["name"].setName("Noto Sans Armenian Med", 1, 3, 1, 0x409)
-    medium["name"].setName("Regular", 2, 3, 1, 0x409)
-    medium["name"].setName(
+    mediumName = medium["name"]
+    mediumName.setName("Noto Sans Armenian Med", 1, 1, 0, 0x0)
+    mediumName.setName("Regular", 2, 1, 0, 0x0)
+    mediumName.setName("Noto Sans Armenian Medium; 15.0d1e2; 2019-03-15", 3, 1, 0, 0x0)
+    mediumName.setName("Noto Sans Armenian Medium", 4, 1, 0, 0x0)
+    mediumName.setName("NotoSansArmenian-Medium", 6, 1, 0, 0x0)
+    mediumName.setName("Noto Sans Armenian", 16, 1, 0, 0x0)
+    mediumName.setName("Medium", 17, 1, 0, 0x0)
+    mediumName.setName("Noto Sans Armenian Med", 1, 3, 1, 0x409)
+    mediumName.setName("Regular", 2, 3, 1, 0x409)
+    mediumName.setName(
         "Noto Sans Armenian Medium; 15.0d1e2; 2019-03-15", 3, 3, 1, 0x409
     )
-    medium["name"].setName("Noto Sans Armenian Medium", 4, 3, 1, 0x409)
-    medium["name"].setName("NotoSansArmenian-Medium", 6, 3, 1, 0x409)
-    medium["name"].setName("Noto Sans Armenian", 16, 3, 1, 0x409)
-    medium["name"].setName("Medium", 17, 3, 1, 0x409)
+    mediumName.setName("Noto Sans Armenian Medium", 4, 3, 1, 0x409)
+    mediumName.setName("NotoSansArmenian-Medium", 6, 3, 1, 0x409)
+    mediumName.setName("Noto Sans Armenian", 16, 3, 1, 0x409)
+    mediumName.setName("Medium", 17, 3, 1, 0x409)
 
     # 'SemiBold' instance
     semibold = instancer.instantiateVariableFont(font, {"wght": 640}, static=True)
 
     semibold["OS/2"].usWeightClass = 600
 
-    semibold["name"].setName("Noto Sans Armenian SemBd", 1, 1, 0, 0x0)
-    semibold["name"].setName("Regular", 2, 1, 0, 0x0)
-    semibold["name"].setName(
+    semiboldName = semibold["name"]
+    semiboldName.setName("Noto Sans Armenian SemBd", 1, 1, 0, 0x0)
+    semiboldName.setName("Regular", 2, 1, 0, 0x0)
+    semiboldName.setName(
         "Noto Sans Armenian SemiBold; 15.0d1e2; 2019-03-15", 3, 1, 0, 0x0
     )
-    semibold["name"].setName("Noto Sans Armenian SemiBold", 4, 1, 0, 0x0)
-    semibold["name"].setName("NotoSansArmenian-SemiBold", 6, 1, 0, 0x0)
-    semibold["name"].setName("Noto Sans Armenian", 16, 1, 0, 0x0)
-    semibold["name"].setName("SemiBold", 17, 1, 0, 0x0)
-    semibold["name"].setName("Noto Sans Armenian SemBd", 1, 3, 1, 0x409)
-    semibold["name"].setName("Regular", 2, 3, 1, 0x409)
-    semibold["name"].setName(
+    semiboldName.setName("Noto Sans Armenian SemiBold", 4, 1, 0, 0x0)
+    semiboldName.setName("NotoSansArmenian-SemiBold", 6, 1, 0, 0x0)
+    semiboldName.setName("Noto Sans Armenian", 16, 1, 0, 0x0)
+    semiboldName.setName("SemiBold", 17, 1, 0, 0x0)
+    semiboldName.setName("Noto Sans Armenian SemBd", 1, 3, 1, 0x409)
+    semiboldName.setName("Regular", 2, 3, 1, 0x409)
+    semiboldName.setName(
         "Noto Sans Armenian SemiBold; 15.0d1e2; 2019-03-15", 3, 3, 1, 0x409
     )
-    semibold["name"].setName("Noto Sans Armenian SemiBold", 4, 3, 1, 0x409)
-    semibold["name"].setName("NotoSansArmenian-SemiBold", 6, 3, 1, 0x409)
-    semibold["name"].setName("Noto Sans Armenian", 16, 3, 1, 0x409)
-
-    semibold["name"].setName("SemiBold", 17, 3, 1, 0x409)
+    semiboldName.setName("Noto Sans Armenian SemiBold", 4, 3, 1, 0x409)
+    semiboldName.setName("NotoSansArmenian-SemiBold", 6, 3, 1, 0x409)
+    semiboldName.setName("Noto Sans Armenian", 16, 3, 1, 0x409)
+    semiboldName.setName("SemiBold", 17, 3, 1, 0x409)
 
     # 'Bold' instance
     bold = instancer.instantiateVariableFont(font, {"wght": 760}, static=True)
 
     bold["OS/2"].usWeightClass = 700
 
-    bold["name"].setName("Noto Sans Armenian", 1, 1, 0, 0x0)
-    bold["name"].setName("Bold", 2, 1, 0, 0x0)
-    bold["name"].setName("Noto Sans Armenian Bold; 15.0d1e2; 2019-03-15", 3, 1, 0, 0x0)
-    bold["name"].setName("Noto Sans Armenian Bold", 4, 1, 0, 0x0)
-    bold["name"].setName("NotoSansArmenian-Bold", 6, 1, 0, 0x0)
-    bold["name"].setName("Noto Sans Armenian", 1, 3, 1, 0x409)
-    bold["name"].setName("Bold", 2, 3, 1, 0x409)
-    bold["name"].setName(
-        "Noto Sans Armenian Bold; 15.0d1e2; 2019-03-15", 3, 3, 1, 0x409
-    )
-    bold["name"].setName("Noto Sans Armenian Bold", 4, 3, 1, 0x409)
-    bold["name"].setName("NotoSansArmenian-Bold", 6, 3, 1, 0x409)
+    boldName = bold["name"]
+    boldName.setName("Noto Sans Armenian", 1, 1, 0, 0x0)
+    boldName.setName("Bold", 2, 1, 0, 0x0)
+    boldName.setName("Noto Sans Armenian Bold; 15.0d1e2; 2019-03-15", 3, 1, 0, 0x0)
+    boldName.setName("Noto Sans Armenian Bold", 4, 1, 0, 0x0)
+    boldName.setName("NotoSansArmenian-Bold", 6, 1, 0, 0x0)
+    boldName.setName("Noto Sans Armenian", 1, 3, 1, 0x409)
+    boldName.setName("Bold", 2, 3, 1, 0x409)
+    boldName.setName("Noto Sans Armenian Bold; 15.0d1e2; 2019-03-15", 3, 3, 1, 0x409)
+    boldName.setName("Noto Sans Armenian Bold", 4, 3, 1, 0x409)
+    boldName.setName("NotoSansArmenian-Bold", 6, 3, 1, 0x409)
 
     # 'ExtraBold' instance
     extrabold = instancer.instantiateVariableFont(font, {"wght": 880}, static=True)
 
     extrabold["OS/2"].usWeightClass = 800
 
-    extrabold["name"].setName("Noto Sans Armenian ExtBd", 1, 1, 0, 0x0)
-    extrabold["name"].setName("Regular", 2, 1, 0, 0x0)
-    extrabold["name"].setName(
+    extraboldName = extrabold["name"]
+    extraboldName.setName("Noto Sans Armenian ExtBd", 1, 1, 0, 0x0)
+    extraboldName.setName("Regular", 2, 1, 0, 0x0)
+    extraboldName.setName(
         "Noto Sans Armenian ExtraBold; 15.0d1e2; 2019-03-15", 3, 1, 0, 0x0
     )
-    extrabold["name"].setName("Noto Sans Armenian ExtraBold", 4, 1, 0, 0x0)
-    extrabold["name"].setName("NotoSansArmenian-ExtraBold", 6, 1, 0, 0x0)
-    extrabold["name"].setName("Noto Sans Armenian", 16, 1, 0, 0x0)
-    extrabold["name"].setName("ExtraBold", 17, 1, 0, 0x0)
-    extrabold["name"].setName("Noto Sans Armenian ExtBd", 1, 3, 1, 0x409)
-    extrabold["name"].setName("Regular", 2, 3, 1, 0x409)
-    extrabold["name"].setName(
+    extraboldName.setName("Noto Sans Armenian ExtraBold", 4, 1, 0, 0x0)
+    extraboldName.setName("NotoSansArmenian-ExtraBold", 6, 1, 0, 0x0)
+    extraboldName.setName("Noto Sans Armenian", 16, 1, 0, 0x0)
+    extraboldName.setName("ExtraBold", 17, 1, 0, 0x0)
+    extraboldName.setName("Noto Sans Armenian ExtBd", 1, 3, 1, 0x409)
+    extraboldName.setName("Regular", 2, 3, 1, 0x409)
+    extraboldName.setName(
         "Noto Sans Armenian ExtraBold; 15.0d1e2; 2019-03-15", 3, 3, 1, 0x409
     )
-    extrabold["name"].setName("Noto Sans Armenian ExtraBold", 4, 3, 1, 0x409)
-    extrabold["name"].setName("NotoSansArmenian-ExtraBold", 6, 3, 1, 0x409)
-    extrabold["name"].setName("Noto Sans Armenian", 16, 3, 1, 0x409)
-    extrabold["name"].setName("ExtraBold", 17, 3, 1, 0x409)
+    extraboldName.setName("Noto Sans Armenian ExtraBold", 4, 3, 1, 0x409)
+    extraboldName.setName("NotoSansArmenian-ExtraBold", 6, 3, 1, 0x409)
+    extraboldName.setName("Noto Sans Armenian", 16, 3, 1, 0x409)
+    extraboldName.setName("ExtraBold", 17, 3, 1, 0x409)
 
     # 'Black' instance
     black = instancer.instantiateVariableFont(font, {"wght": 1000}, static=True)
 
     black["OS/2"].usWeightClass = 900
 
-    black["name"].setName("Noto Sans Armenian Blk", 1, 1, 0, 0x0)
-    black["name"].setName("Regular", 2, 1, 0, 0x0)
-    black["name"].setName(
-        "Noto Sans Armenian Black; 15.0d1e2; 2019-03-15", 3, 1, 0, 0x0
-    )
-    black["name"].setName("Noto Sans Armenian Black", 4, 1, 0, 0x0)
-    black["name"].setName("NotoSansArmenian-Black", 6, 1, 0, 0x0)
-    black["name"].setName("Noto Sans Armenian", 16, 1, 0, 0x0)
-    black["name"].setName("Black", 17, 1, 0, 0x0)
-    black["name"].setName("Noto Sans Armenian Blk", 1, 3, 1, 0x409)
-    black["name"].setName("Regular", 2, 3, 1, 0x409)
-    black["name"].setName(
-        "Noto Sans Armenian Black; 15.0d1e2; 2019-03-15", 3, 3, 1, 0x409
-    )
-    black["name"].setName("Noto Sans Armenian Black", 4, 3, 1, 0x409)
-    black["name"].setName("NotoSansArmenian-Black", 6, 3, 1, 0x409)
-    black["name"].setName("Noto Sans Armenian", 16, 3, 1, 0x409)
-    black["name"].setName("Black", 17, 3, 1, 0x409)
+    blackName = black["name"]
+    blackName.setName("Noto Sans Armenian Blk", 1, 1, 0, 0x0)
+    blackName.setName("Regular", 2, 1, 0, 0x0)
+    blackName.setName("Noto Sans Armenian Black; 15.0d1e2; 2019-03-15", 3, 1, 0, 0x0)
+    blackName.setName("Noto Sans Armenian Black", 4, 1, 0, 0x0)
+    blackName.setName("NotoSansArmenian-Black", 6, 1, 0, 0x0)
+    blackName.setName("Noto Sans Armenian", 16, 1, 0, 0x0)
+    blackName.setName("Black", 17, 1, 0, 0x0)
+    blackName.setName("Noto Sans Armenian Blk", 1, 3, 1, 0x409)
+    blackName.setName("Regular", 2, 3, 1, 0x409)
+    blackName.setName("Noto Sans Armenian Black; 15.0d1e2; 2019-03-15", 3, 3, 1, 0x409)
+    blackName.setName("Noto Sans Armenian Black", 4, 3, 1, 0x409)
+    blackName.setName("NotoSansArmenian-Black", 6, 3, 1, 0x409)
+    blackName.setName("Noto Sans Armenian", 16, 3, 1, 0x409)
+    blackName.setName("Black", 17, 3, 1, 0x409)
 
     collection = TTCollection()
     collection.fonts = [
