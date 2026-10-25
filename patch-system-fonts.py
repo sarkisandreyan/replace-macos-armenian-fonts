@@ -512,9 +512,9 @@ if macos_major_version < 12:
 The earliest macOS version this tool was tested on was Monterey 12.
 Results may be unexpected on untested macOS versions.
 """
-elif macos_major_version > 26:
+elif macos_major_version > 27:
     macos_version_warning = """
-The latest macOS version this tool was tested on was Tahoe 26.
+The latest macOS version this tool was tested on was Golden Gate 27.
 Results may be unexpected on untested macOS versions.
 """
 
