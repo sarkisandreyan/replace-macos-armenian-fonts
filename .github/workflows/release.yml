@@ -1,0 +1,33 @@
+name: Build and attach binary to release
+
+on:
+  release:
+    types:
+      - published
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: macos-26
+
+    steps:
+      - name: Check out release tag
+        uses: actions/checkout@v7
+        with:
+          ref: ${{ github.event.release.tag_name }}
+
+      - name: Install Python and uv
+        uses: astral-sh/setup-uv@v10.3.3
+
+      - name: Run build script
+        run: |
+          chmod +x build.sh
+          sh build.sh
+
+      - name: Attach binary to release
+        env:
+          TAG_NAME: ${{ github.event.release.tag_name }}
+          GH_TOKEN: ${{ github.token }}
+        run: gh release upload $TAG_NAME bin/patch-system-fonts
