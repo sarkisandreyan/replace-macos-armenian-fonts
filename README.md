@@ -7,7 +7,7 @@
 
 A tool to easily change the macOS system fonts for rendering Armenian — SF Armenian and Noto Sans Armenian — with a replacement font of your liking.
 
-I personally use [Neue Helvetica Armenian](https://www.myfonts.com/collections/neue-helvetica-armenian-font-linotype) by Linotype — the wonderful Armenian supplement of the Neue Helvetica family by [Edik Ghabuzyan](https://www.gheafonts.com/product-category/designers/edik-ghabuzyan/). Neue Helvetica blends beautifully with the interface of macOS because the system default San Francisco has had a strong influence from Helvetica.
+I personally use a slightly modified version of [Neue Helvetica Armenian](https://www.myfonts.com/collections/neue-helvetica-armenian-font-linotype) by Linotype — the wonderful Armenian supplement of the Neue Helvetica family by [Edik Ghabuzyan](https://www.gheafonts.com/product-category/designers/edik-ghabuzyan/). Neue Helvetica blends beautifully with the interface of macOS because the system default San Francisco has had a strong influence from Helvetica.
 
 ## Motivation
 
@@ -75,6 +75,8 @@ Assuming you want to replace the system fonts for Armenian with a font named `Re
     ```
 
     (Root privileges are required for changing the boot volume.)
+
+    > ⚠️ macOS might 'quarantine' the tool and reject running it due to security reasons ('patch-system-fonts Not Opened'). See [Troubleshooting](#troubleshooting) for help.
 3. Read about the potential adverse effects of running the tool and confirm that you still wish to proceeed by typing CONFIRM and pressing Enter.
 4. Once you see the message about the boot volume having successfully been changed, restart your computer and you should see the fonts replaced.
 5. At this point, you should be good to turn System Integrity Protetion (SIP) back on from Recovery:
@@ -155,9 +157,23 @@ I will update this list as I come across any further issues with the replaced fo
 
 ## Troubleshooting
 
+- **I'm seeing a 'patch-system-fonts Not Opened' error when trying to run the tool.**
+
+  Because the executable `patch-system-fonts` is signed 'ad-hoc', macOS will most probably 'quarantine' it and reject running it in the Terminal with the message 'Apple could not verify "patch-system-fonts" is free of malware,' suggesting that you move it to Trash.
+
+  You need to remove the quarantine attribute from the executable to be able to run it. Run the following command to remove it, then try running the tool again:
+
+  ```bash
+  xattr -d com.apple.quarantine ./patch-system-fonts
+  ```
+
 - **I'm seeing a 'Permission denied' error when trying to run the tool.**
 
-  You need execute permissions in order to be able to run the tool. Grant them by running `chmod +x ./patch-system-fonts`, then try running the tool again.
+  You need execute permissions in order to be able to run the tool. Grant them by running the following command, then try running the tool again:
+
+  ```bash
+  chmod +x ./patch-system-fonts
+  ```
 
 - **I don't like the result. How do I revert back?**
 
@@ -171,4 +187,4 @@ I will update this list as I come across any further issues with the replaced fo
 
 <h2 id="limitation-of-liability">Limitation of Liability</h2>
 
-THIS TOOL IS PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND. THIS TOOL MAY DAMAGE OR RENDER YOUR COMPUTER OR DATA INOPERABLE; YOU ACKNOWLEDGE AND ACCEPT ALL RISKS ASSOCIATED WITH USING IT, AND THE AUTHOR(S), CONTRIBUTORS, AND DISTRIBUTORS ARE NOT LIABLE FOR ANY LOSS, DAMAGE, OR INJURY (INCLUDING DATA LOSS, SYSTEM FAILURE, OR OTHER HARM) ARISING FROM USE OR MISUSE OF THIS TOOL; YOU ARE SOLELY RESPONSIBLE FOR BACKUPS, TESTING IN A SAFE ENVIRONMENT, AND ANY CONSEQUENCES OF RUNNING IT.
+THIS TOOL IS PROVIDED 'AS IS' WITHOUT WARRANTY OF ANY KIND. THIS TOOL MAY DAMAGE OR RENDER YOUR COMPUTER OR DATA INOPERABLE; YOU ACKNOWLEDGE AND ACCEPT ALL RISKS ASSOCIATED WITH USING IT, AND THE AUTHOR(S), CONTRIBUTORS, AND DISTRIBUTORS ARE NOT LIABLE FOR ANY LOSS, DAMAGE, OR INJURY (INCLUDING DATA LOSS, SYSTEM FAILURE, OR OTHER HARM) ARISING FROM USE OR MISUSE OF THIS TOOL; YOU ARE SOLELY RESPONSIBLE FOR BACKUPS, TESTING IN A SAFE ENVIRONMENT, AND ANY CONSEQUENCES OF RUNNING IT.
